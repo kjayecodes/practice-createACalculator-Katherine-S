@@ -37,14 +37,14 @@ function roundToDecimal(num, decimals) {
 // ----------------------
 // Testing the Calculator
 
-console.log("Absolute value of -45.67:", absoluteValue(-45.67));
-console.log("5 to the power of 3:", power(5, 3));
-console.log("Square root of 144:", squareRoot(144));
+console.log("Absolute value of -45.67:", absoluteValue(-45.67)); // 45.67
+console.log("5 to the power of 3:", power(5, 3)); // 125
+console.log("Square root of 144:", squareRoot(144)); // 12
 
-let numbers = [3, 78, -12, 0.5, 27];
-let result = maxMin(numbers);
-console.log("Max value:", result.max);
-console.log("Min value:", result.min);
+let numbers = [3, 78, -12, 0.5, 27]; // Example array for max/min
+let result = maxMin(numbers); // { max: 78, min: -12 }
+console.log("Max value:", result.max); // 78
+console.log("Min value:", result.min); // -12
 
-console.log("Random number between 1 and 50:", randomNumber(1, 50));
-console.log("23.67891 rounded to 2 decimals:", roundToDecimal(23.67891, 2));
+console.log("Random number between 1 and 50:", randomNumber(1, 50)); // Random number between 1 and 50
+console.log("23.67891 rounded to 2 decimals:", roundToDecimal(23.67891, 2)); // 23.68
