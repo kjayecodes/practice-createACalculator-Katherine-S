@@ -1,0 +1,50 @@
+// Calculator Functions
+
+// 1. Absolute Value
+function absoluteValue(num) {
+    return Math.abs(num);
+}
+
+// 2. Power Calculation
+function power(base, exponent) {
+    return Math.pow(base, exponent);
+}
+
+// 3. Square Root
+function squareRoot(num) {
+    return Math.sqrt(num);
+}
+
+// 4. Maximum and Minimum Finder
+function maxMin(numbers) {
+    return {
+        max: Math.max(...numbers),
+        min: Math.min(...numbers)
+    };
+}
+
+// 5. Random Number Generator
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// 6. Custom Rounding
+function roundToDecimal(num, decimals) {
+    const factor = Math.pow(10, decimals);
+    return Math.round(num * factor) / factor;
+}
+
+// ----------------------
+// Testing the Calculator
+
+console.log("Absolute value of -45.67:", absoluteValue(-45.67));
+console.log("5 to the power of 3:", power(5, 3));
+console.log("Square root of 144:", squareRoot(144));
+
+let numbers = [3, 78, -12, 0.5, 27];
+let result = maxMin(numbers);
+console.log("Max value:", result.max);
+console.log("Min value:", result.min);
+
+console.log("Random number between 1 and 50:", randomNumber(1, 50));
+console.log("23.67891 rounded to 2 decimals:", roundToDecimal(23.67891, 2));
